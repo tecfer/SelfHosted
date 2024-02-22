@@ -9,7 +9,7 @@ services:
     container_name: influxdb
     image: influxdb:1.8.10
     volumes:
-      - /path/to/influxdb:/var/lib/influxdb
+      - /path-to-config/influxdb:/var/lib/influxdb
     ports:
       - 8086:8086
     environment:
@@ -19,7 +19,7 @@ services:
     container_name: grafana
     image: grafana/grafana:latest
     volumes:
-      - /path/to/grafana:/var/lib/grafana
+      - /path-to-config/grafana:/var/lib/grafana
     depends_on:
       - influxdb
     ports:

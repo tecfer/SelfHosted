@@ -8,5 +8,5 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - /path/to/data:/web
+      - /path-to-data:/web
 ````

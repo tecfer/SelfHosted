@@ -9,8 +9,9 @@ services:
     container_name: homeassistant
     image: "ghcr.io/home-assistant/home-assistant:stable"
     volumes:
-      - /path/to/home-assistant/config:/config
+      - /path-to-config/home-assistant/config:/config
       - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
     privileged: true
     network_mode: host

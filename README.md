@@ -13,7 +13,7 @@ sudo usermod -aG docker $USER
 Creación de carpetas para las configuraciones de los containers:
 
 ```cmd
-sudo mkdir /path_to_data
-sudo chown root.docker /path_to_data
-sudo chmod 774 /path_to_data
+sudo mkdir /path-to-data
+sudo chown root.docker /path-to-data
+sudo chmod 774 /path-to-data
 ```

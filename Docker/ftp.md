@@ -1,5 +1,6 @@
 # Simple FTP
 
+Stack funcional en Orange pi pc
 ```yaml
 version: '3.7'
 services:
@@ -9,7 +10,7 @@ services:
       - FTP_USER=USUARIO_FTP
       - FTP_PASSWORD=CONTRASEÑA_FTP
     volumes:
-      - /path/to/data/FTP/:/srv
+      - /path-to-data/FTP/:/srv
     expose:
       - 21
     network_mode: host

@@ -10,5 +10,5 @@ services:
     ports:
       - "1880:1880"
     volumes:
-      - /path/to/config:/data
+      - /path-to-config/nodered/config:/data
 ```

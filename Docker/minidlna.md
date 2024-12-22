@@ -1,3 +1,10 @@
+
+
+
+    # MiniDLNA
+Stack minidlna funcional en un contenedor Alpine-Docker LXC Proxmox
+
+```yaml
 version: "3.8"
 
 services:
@@ -10,6 +17,6 @@ services:
       - /path-to-data/minidlna:/config    # Configuración persistente
     environment:
       - MINIDLNA_MEDIA_DIR=/media  
-      
       - MINIDLNA_FRIENDLY_NAME=NOMBRE    # Nombre amigable del servidor
     restart: unless-stopped
+```
